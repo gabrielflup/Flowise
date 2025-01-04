@@ -55,7 +55,7 @@ class ChatflowTool_Tools implements INode {
                 description: 'Description of what the tool does. This is for LLM to determine when to use this tool.',
                 rows: 3,
                 placeholder:
-                    'State of the Union QA - useful for when you need to ask questions about the most recent state of the union address.'
+                    'teste gabriel'
             },
             {
                 label: 'Return Direct',
