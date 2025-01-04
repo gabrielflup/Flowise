@@ -21,7 +21,7 @@ class ChatflowTool_Tools implements INode {
     inputs: INodeParams[]
 
     constructor() {
-        this.label = 'Chatflow Tool'
+        this.label = 'Chatflow Gabriel'
         this.name = 'ChatflowTool'
         this.version = 5.0
         this.type = 'ChatflowTool'
