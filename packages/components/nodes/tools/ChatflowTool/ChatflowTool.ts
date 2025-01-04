@@ -331,10 +331,11 @@ const options = $callOptions;
 try {
 	const response = await fetch(url, options);
 	const resp = await response.json();
-	return resp.text;
+	return { text: resp.text, artifacts: resp.artifacts || [] };
+} catch (error) {
 } catch (error) {
 	console.error(error);
-	return '';
+	return { text: '', artifacts: [] };
 }
 `
         const builtinDeps = process.env.TOOL_FUNCTION_BUILTIN_DEP
@@ -355,7 +356,7 @@ try {
         const vm = new NodeVM(vmOptions)
         const response = await vm.run(`module.exports = async function() {${code}}()`, __dirname)
 
-        return response
+        return JSON.stringify(response)
     }
 }
 
