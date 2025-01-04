@@ -55,7 +55,7 @@ class ChatflowTool_Tools implements INode {
                 description: 'Description of what the tool does. This is for LLM to determine when to use this tool.',
                 rows: 3,
                 placeholder:
-                    'teste gabriel'
+                    'teste gabriel2'
             },
             {
                 label: 'Return Direct',
